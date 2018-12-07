@@ -3,11 +3,15 @@ let board = ["", "", "", "", "", "", "", "", ""];
 let buttons = document.querySelectorAll("button");
 let title = document.querySelector(".title");
 let turn = document.querySelector("#turn_mark");
-buttons.forEach(_button => _button.addEventListener("click", clickHandle));
+buttons.forEach(_button => {
+  _button.inne = " ";
+  _button.addEventListener("click", clickHandle);
+});
 
 function clickHandle(e) {
   board[e.target.id] = mark;
   e.target.innerText = mark;
+  e.target.disabled = true;
   Draw();
   if (Win()) {
     title.innerText = "Win " + mark;

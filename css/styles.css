@@ -30,6 +30,7 @@ body {
   color: #ae7c7c;
   text-align: center;
   outline: none;
+  padding: 10px;
 }
 
 .field:hover {
