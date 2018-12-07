@@ -9,7 +9,6 @@ body {
   width: 80%;
   margin: auto;
   text-align: center;
-  border: 1px solid black;
 }
 .title {
   font-size: 3rem;
@@ -26,7 +25,6 @@ body {
   grid-template-rows: repeat(3, 1fr);
 }
 .field {
-  width: 100%;
   background-color: #efe784;
   font-size: 3rem;
   color: #ae7c7c;
@@ -38,7 +36,11 @@ body {
   background-color: #3e3838;
 }
 .turn {
+  color: #ae7c7c;
   font-size: 2rem;
+}
+#turn_mark {
+  color: #efe784;
 }
 
 @media (min-width: 700px) {
